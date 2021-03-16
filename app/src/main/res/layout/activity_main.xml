@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,6 +18,8 @@
         android:text="Toast"
         android:onClick="showToast"
         android:textColor="@android:color/background_light"
+        android:layout_below="@+id/show_count"
+        android:layout_centerHorizontal="true"
          />
 
 
@@ -36,7 +38,9 @@
         android:textColor="@color/primary"
         android:textSize="160sp"
         android:textStyle="bold"
-        tools:ignore="RtlCompat" />
+        tools:ignore="RtlCompat"
+
+        />
 
     <Button
         android:id="@+id/button_count"
@@ -53,4 +57,4 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+</RelativeLayout>
